@@ -1,7 +1,7 @@
-# manage python virtualenv's
+# manage python virtualenv
 
 pve-list () {
-    echo "Existing python virtualenv:"
+    echo "Existing python virtualenvs:"
     ls ~/.virtualenvs/
 }
 
