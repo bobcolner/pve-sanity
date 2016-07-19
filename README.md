@@ -6,19 +6,20 @@ simple zsh function to wrange python virtualenvs.
 
 ### Usage
 
-#### list python virtualenvs
+#### list virtualenvs
 `pve-list`
 
-#### list currently active python path
+#### list currently active path
 `pve_active`
 
-#### activate python virtualenvs
+#### activate virtualenvs
 `pve_active {virtualenv}`
 
-#### create new python virtualenvs
+#### deactivate virtualenv
+`pve_deactivate {virtualenv}`
+
+#### create new virtualenvs
 `pve_create {virtualenv}`
 
-#### create new python virtualenvs
-`pve_create {virtualenv}`
-
- 
+#### delete virtualenvs
+`pve_delete {virtualenv}`
