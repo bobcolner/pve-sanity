@@ -5,30 +5,30 @@ pve-list () {
     ls ~/.virtualenvs/
 }
 
-pve_create () {
+pve-create () {
     echo "Creating new python virtualenv: "$1""
     mkdir ~/.virtualenvs/
     virtualenv -p `which python3` ~/.virtualenvs/"$1"
     source ~/.virtualenvs/"$1"/bin/activate
 }
 
-pve_activate () {
+pve-activate () {
     echo "Activating python virtualenv: "$1""
     source ~/.virtualenvs/"$1"/bin/activate
 }
 
-pve_active () {
+pve-active () {
     echo "Active python path:"
     which python
 }
 
-pve_deactivate () {
+pve-deactivate () {
 	echo "Deactivating python virtualenv:"
 	which python
-	deactivate
+	source deactivate
 }
 
-pve_delete () {
+pve-delete () {
     echo "Deleting python virtualenv: "$1""
     rm -r ~/.virtualenvs/"$1"
 }
