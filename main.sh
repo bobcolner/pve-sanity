@@ -10,11 +10,7 @@ pve-create () {
     # arg2: python version number (e.g. "3.5")
     echo "Creating new python virtualenv: "$1""
     mkdir ~/.virtualenvs/
-<<<<<<< HEAD
     virtualenv -p `which python"$2"` ~/.virtualenvs/"$1"
-=======
-    virtualenv -p `which "$2"` ~/.virtualenvs/"$1"
->>>>>>> 90e95ecbdbdc2f0c0b299a1d908e65ea0df98055
     source ~/.virtualenvs/"$1"/bin/activate
 }
 
