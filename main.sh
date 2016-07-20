@@ -6,9 +6,11 @@ pve-list () {
 }
 
 pve-create () {
+    # arg1: virtualenv name (e.g. "default")
+    # arg2: python version number (e.g. "3.5")
     echo "Creating new python virtualenv: "$1""
     mkdir ~/.virtualenvs/
-    virtualenv -p `which python3` ~/.virtualenvs/"$1"
+    virtualenv -p `which "$2"` ~/.virtualenvs/"$1"
     source ~/.virtualenvs/"$1"/bin/activate
 }
 
